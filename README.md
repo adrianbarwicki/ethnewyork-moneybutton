@@ -5,6 +5,9 @@ This repository contains a code for creating your own money button component. It
 
 If you click on the button, it will send X ETH to an Ethereum smart contract that will distribute it between the author and previous voters.
 
+## Build version
+You will find the build version here: `dist/ethnewyork-moneybutton.js`.
+
 ## Example Integration
 ```html
 <html>

@@ -1,8 +1,8 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.ts',
     output: {
         filename: 'ethnewyork-moneybutton.js',
@@ -36,8 +36,8 @@ module.exports = {
         extensions: [ '*', '.ts', '.js', '.css' ]
     },
     optimization: {
-        minimizer: [new UglifyJsPlugin({
-            extractComments:{
+        minimizer: [new TerserPlugin({
+            extractComments: {
             condition: 'all',
             banner: `Adrian Barwicki | adrian@adrianbarwicki.com`
         }})]
