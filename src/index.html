@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>ETH New York Moneybutton</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <!--START OF External dependencies-->
+
+        <!--END OF External dependencies-->
+    </head>
+    <body>
+        <!-- START The component will be rendered in this container: -->
+        <div id="eth-newyork-moneybutton"></div>
+        <!-- END -->
+
+        <!-- Load the component library -->
+        <script type="text/javascript" src="/ethnewyork-moneybutton.js"></script>
+
+        <!--
+            Bootstrap the component
+        -->
+        <script>
+            window.addEventListener("load", () => {
+                window.ethNewYorkMoneyButton.bootstrap({
+                    // where should it be rendered?
+                    domID: "eth-newyork-moneybutton",
+
+                    // content Id can be for example the URL
+                    contentId: location.href
+                });
+            })
+        </script>
+    </body>
+</html>
