@@ -4,17 +4,17 @@ import Web3 from "web3";
 import abi from "./abi";
 import contractAddress from "./contractAddress";
 
-/**
-let socketsWeb3 = new Web3(new Web3.providers.WebsocketProvider('wss://ropsten.infura.io/v3/4bc7b00850ef4dceb8a527b094e65953'));
- */
-
 if (typeof window.web3 !== 'undefined') {
   web3 = new Web3(window.web3.currentProvider);
-} else {
-  // set the provider you want from Web3.providers
-  web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'));
-}
 
+  console.log("metamask is installed");
+} else {
+
+  console.log("metamask is not installed");
+
+  alert("Metamask is not installed")
+  // set the provider you want from Web3.providers
+}
 
 let defaultAddress: string, defaultTx;
 
@@ -24,6 +24,7 @@ const account = web3.eth.accounts.privateKeyToAccount('0x' + privateKey);
 web3.eth.accounts.wallet.add(account);
 */
 
+/**
 web3.eth.getAccounts().then(e => { 
   defaultAddress = e[0];
   defaultTx = {
@@ -32,9 +33,13 @@ web3.eth.getAccounts().then(e => {
     // gasPrice: web3.utils.toWei("20", "gwei")
   };
  }) 
+ */;
+
+ web3.eth.getAccounts()
+ .then(console.log);
 
 const contractInstance = new web3.eth.Contract(abi, contractAddress);
 
-export const getDefaultAddress = () => defaultAddress;
+export const getDefaultAddress = () => window.web3.currentProvider.selectedAddress;
 
- export const get = () => contractInstance;
+export const get = () => contractInstance;

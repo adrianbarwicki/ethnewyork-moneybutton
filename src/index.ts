@@ -14,10 +14,6 @@ const bootstrap = (opts: ATH.BootstrapOpts) => {
         throw new Error("ATH Component: Missing 'domId' in initialization options.");
     }
 
-    if (!opts.apiUrl) {
-        throw new Error("ATH Component: Missing 'apiUrl' in initialization options.");
-    }
-
     athComponentRegister.push(new MoneyButton(opts.domID, opts.apiUrl));
 };
 
