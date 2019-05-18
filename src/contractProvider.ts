@@ -16,7 +16,7 @@ if (typeof window.web3 !== 'undefined') {
 }
 
 
-let defaultAddress, defaultTx;
+let defaultAddress: string, defaultTx;
 
 /*
 const privateKey = '6cbed15c793ce57650b9877cf6fa156fbef513c4e6134f022a85b1ffdd59b2a1';
@@ -33,12 +33,8 @@ web3.eth.getAccounts().then(e => {
   };
  }) 
 
-const cardbaseInstance = new web3.eth.Contract(abi, contractAddress);
+const contractInstance = new web3.eth.Contract(abi, contractAddress);
 
-export const getDefaultAddress = () => {
-    return defaultAddress;
-}
+export const getDefaultAddress = () => defaultAddress;
 
- export const get = () => {
-    return cardbaseInstance;
- };
+ export const get = () => contractInstance;
