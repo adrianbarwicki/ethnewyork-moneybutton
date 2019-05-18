@@ -18,5 +18,7 @@ export const voteStuff = async (contentId: string) => {
     });
 
   // @todo what do we return? Consult Nagy
+  console.log(res);
+  
   return res.toString();
 };

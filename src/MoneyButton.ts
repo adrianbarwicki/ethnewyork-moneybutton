@@ -1,9 +1,5 @@
 
-import Web3 from 'web3';
 import { voteStuff } from './voteStuff';
-
-// @TODO nagy configure the provider.
-const web3 = new Web3('ws://localhost:8546');
 
 export default class ExampleComponent {
     constructor(private _domID: string, private _apiUrl: string) {

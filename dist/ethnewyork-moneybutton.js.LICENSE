@@ -1103,19 +1103,17 @@
 
 /* 38 */
 
-/* 39 */
-
 // NOTE: These type checking functions intentionally don't use `instanceof`
 
 // because it is fragile and can be easily faked with `Object.create()`.
 
 // ES6 symbol
 
-/* 40 */
+/* 39 */
 
 /** Built-in value references. */
 
-/* 41 */
+/* 40 */
 
 /**
  * Checks if `value` is classified as a `String` primitive or object.
@@ -1135,7 +1133,7 @@
  * // => false
  */
 
-/* 42 */
+/* 41 */
 
 /**
  * Creates an array of the own enumerable property names of `object`.
@@ -1166,7 +1164,7 @@
  * // => ['0', '1']
  */
 
-/* 43 */
+/* 42 */
 
 // old-style streams.  Note that the pipe method (the only relevant
 
@@ -1186,9 +1184,9 @@
 
 // Allow for unix-like usage: A.pipe(B).pipe(C)
 
-/* 44 */
+/* 43 */
 
-/* 45 */
+/* 44 */
 
 // Enough data, try updating
 
@@ -1197,6 +1195,8 @@
 // Process pending data in blocks
 
 // Append length
+
+/* 45 */
 
 /* 46 */
 
@@ -1210,8 +1210,6 @@
 
 /* 51 */
 
-/* 52 */
-
 /**
  * Creates an list cache object.
  *
@@ -1222,7 +1220,7 @@
 
 // Add methods to `ListCache`.
 
-/* 53 */
+/* 52 */
 
 /**
  * Gets the index at which the `key` is found in `array` of key-value pairs.
@@ -1233,11 +1231,11 @@
  * @returns {number} Returns the index of the matched value, else `-1`.
  */
 
-/* 54 */
+/* 53 */
 
 /* Built-in method references that are verified to be native. */
 
-/* 55 */
+/* 54 */
 
 /**
  * Gets the data for `map`.
@@ -1248,7 +1246,7 @@
  * @returns {*} Returns the map data.
  */
 
-/* 56 */
+/* 55 */
 
 /**
  * Copies properties of `source` to `object`.
@@ -1261,7 +1259,7 @@
  * @returns {Object} Returns `object`.
  */
 
-/* 57 */
+/* 56 */
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -1289,11 +1287,11 @@
  * // => false
  */
 
-/* 58 */
+/* 57 */
 
 // Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
 
-/* 59 */
+/* 58 */
 
 /** Used as references for various `Number` constants. */
 
@@ -1305,9 +1303,9 @@
  * @returns {string|symbol} Returns the key.
  */
 
-/* 60 */
+/* 59 */
 
-/* 61 */
+/* 60 */
 
 // based on the aes implimentation in triple sec
 
@@ -1329,21 +1327,21 @@
 
 // swap
 
-/* 62 */
+/* 61 */
 
 /* eslint-disable camelcase */
 
+/* 62 */
+
 /* 63 */
 
-/* 64 */
-
 // falls through
+
+/* 64 */
 
 /* 65 */
 
 /* 66 */
-
-/* 67 */
 
 // Normally, the page is loaded from http or https, so not specifying a protocol
 
@@ -1357,7 +1355,7 @@
 
 // Also valid opts.auth, opts.mode
 
-/* 68 */
+/* 67 */
 
 // Backwards-compat with node 0.10.x
 
@@ -1405,7 +1403,7 @@
 
 // LIFO order
 
-/* 69 */
+/* 68 */
 
 // A bit simpler than readable streams.
 
@@ -1591,7 +1589,7 @@
 
 // ignore unnecessary end() calls.
 
-/* 70 */
+/* 69 */
 
 // Do not cache `Buffer.isEncoding` when checking encoding names as some
 
@@ -1661,7 +1659,7 @@
 
 // Attempts to complete a partial non-UTF-8 character using bytes from a Buffer
 
-/* 71 */
+/* 70 */
 
 // Reference: RFC 3986, RFC 1808, RFC 2396
 
@@ -1883,13 +1881,13 @@
 
 //to support request.http
 
-/* 72 */
+/* 71 */
 
 /** @class */
 
 // TODO: set event.currentTarget?
 
-/* 73 */
+/* 72 */
 
 /**
  * Constructor to create a storage for our `EE` objects.
@@ -2030,7 +2028,7 @@
 
 // Allow `EventEmitter` to be imported as module namespace.
 
-/* 74 */
+/* 73 */
 
 /**
  * Creates a stack cache object to store key-value pairs.
@@ -2042,7 +2040,7 @@
 
 // Add methods to `Stack`.
 
-/* 75 */
+/* 74 */
 
 /**
  * Performs a
@@ -2077,9 +2075,9 @@
  * // => true
  */
 
-/* 76 */
+/* 75 */
 
-/* 77 */
+/* 76 */
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -2091,11 +2089,11 @@
 
 // Add methods to `MapCache`.
 
-/* 78 */
+/* 77 */
 
 /** Detect free variable `exports`. */
 
-/* 79 */
+/* 78 */
 
 /**
  * Checks if `value` is a valid array-like length.
@@ -2124,7 +2122,7 @@
  * // => false
  */
 
-/* 80 */
+/* 79 */
 
 /**
  * The base implementation of `_.unary` without support for storing metadata.
@@ -2134,13 +2132,13 @@
  * @returns {Function} Returns the new capped function.
  */
 
-/* 81 */
+/* 80 */
 
 // Use `util.types` for Node.js 10+.
 
 // Legacy `process.binding('util')` for Node.js < 10.
 
-/* 82 */
+/* 81 */
 
 /** Used for built-in method references. */
 
@@ -2152,9 +2150,9 @@
  * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
  */
 
-/* 83 */
+/* 82 */
 
-/* 84 */
+/* 83 */
 
 /**
  * Creates a clone of `arrayBuffer`.
@@ -2164,7 +2162,7 @@
  * @returns {ArrayBuffer} Returns the cloned array buffer.
  */
 
-/* 85 */
+/* 84 */
 
 // This was ported from https://github.com/emn178/js-sha3, with some minor
 
@@ -2210,7 +2208,7 @@
 
 // toString
 
-/* 86 */
+/* 85 */
 
 /** Used to match property names within property paths. */
 
@@ -2223,7 +2221,7 @@
  * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
  */
 
-/* 87 */
+/* 86 */
 
 /**
  * Checks if `value` is classified as a `Symbol` primitive or object.
@@ -2243,11 +2241,11 @@
  * // => false
  */
 
-/* 88 */
+/* 87 */
 
 // c <= 0xffff
 
-/* 89 */
+/* 88 */
 
 // state
 
@@ -2255,13 +2253,15 @@
 
 // produce result
 
-/* 90 */
+/* 89 */
 
 // computation
 
 // if (i<80) {
 
 // update state
+
+/* 90 */
 
 /* 91 */
 
@@ -2273,17 +2273,15 @@
 
 /* 95 */
 
-/* 96 */
-
 // Proxy hash functions to the main object
+
+/* 96 */
 
 /* 97 */
 
 /* 98 */
 
 /* 99 */
-
-/* 100 */
 
 // The xhr request to example.com may violate some restrictive CSP configurations,
 
@@ -2317,7 +2315,7 @@
 
 // getXHR().
 
-/* 101 */
+/* 100 */
 
 // Fake the 'close' event, but only once 'end' fires
 
@@ -2343,7 +2341,7 @@
 
 // The ms-stream case handles end separately in reader.onload()
 
-/* 102 */
+/* 101 */
 
 // object stream flag. Used to make read(n) ignore n and to
 
@@ -2649,9 +2647,9 @@
 
 // exposed for testing purposes only.
 
-/* 103 */
+/* 102 */
 
-/* 104 */
+/* 103 */
 
 // undocumented cb() API, needed for core, not for public API
 
@@ -2661,7 +2659,7 @@
 
 // if this is a duplex stream mark the writable part as destroyed as well
 
-/* 105 */
+/* 104 */
 
 // a transform stream is a readable/writable stream where you do
 
@@ -2775,7 +2773,7 @@
 
 // will get processed, now that we've asked for it.
 
-/* 106 */
+/* 105 */
 
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
@@ -3021,13 +3019,13 @@
 	 * email address.
 	 */
 
-/* 107 */
+/* 106 */
 
-/* 108 */
+/* 107 */
 
 /** Detect free variable `global` from Node.js. */
 
-/* 109 */
+/* 108 */
 
 /** Used to compose bitmasks for cloning. */
 
@@ -3050,7 +3048,7 @@
  * // => false
  */
 
-/* 110 */
+/* 109 */
 
 /** Used to resolve the decompiled source of functions. */
 
@@ -3062,7 +3060,7 @@
  * @returns {string} Returns the source code.
  */
 
-/* 111 */
+/* 110 */
 
 /**
  * Assigns `value` to `key` of `object` if the existing value is not equivalent
@@ -3075,7 +3073,7 @@
  * @param {*} value The value to assign.
  */
 
-/* 112 */
+/* 111 */
 
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
@@ -3087,7 +3085,7 @@
  * @param {*} value The value to assign.
  */
 
-/* 113 */
+/* 112 */
 
 /**
  * Creates an array of the enumerable property names of the array-like `value`.
@@ -3106,9 +3104,9 @@
 
 // Skip index properties.
 
-/* 114 */
+/* 113 */
 
-/* 115 */
+/* 114 */
 
 /** Used to detect unsigned integer values. */
 
@@ -3121,11 +3119,11 @@
  * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
  */
 
-/* 116 */
+/* 115 */
 
 /* Node.js helper references. */
 
-/* 117 */
+/* 116 */
 
 /**
  * Creates a unary function that invokes `func` with its argument transformed.
@@ -3136,7 +3134,7 @@
  * @returns {Function} Returns the new function.
  */
 
-/* 118 */
+/* 117 */
 
 /**
  * Creates an array of the own and inherited enumerable property names of `object`.
@@ -3162,7 +3160,7 @@
  * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
  */
 
-/* 119 */
+/* 118 */
 
 /**
  * This method returns a new empty array.
@@ -3183,11 +3181,11 @@
  * // => false
  */
 
-/* 120 */
+/* 119 */
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 
-/* 121 */
+/* 120 */
 
 /**
  * Appends the elements of `values` to `array`.
@@ -3198,9 +3196,9 @@
  * @returns {Array} Returns `array`.
  */
 
-/* 122 */
+/* 121 */
 
-/* 123 */
+/* 122 */
 
 /**
  * Creates an array of own enumerable property names and symbols of `object`.
@@ -3210,7 +3208,7 @@
  * @returns {Array} Returns the array of property names and symbols.
  */
 
-/* 124 */
+/* 123 */
 
 /**
  * The base implementation of `getAllKeys` and `getAllKeysIn` which uses
@@ -3224,9 +3222,9 @@
  * @returns {Array} Returns the array of property names and symbols.
  */
 
-/* 125 */
+/* 124 */
 
-/* 126 */
+/* 125 */
 
 /**
  * Checks if `value` is classified as a `Number` primitive or object.
@@ -3255,7 +3253,7 @@
  * // => false
  */
 
-/* 127 */
+/* 126 */
 
 /**
  * Returns a BN object, converts a number value to a BN
@@ -3266,7 +3264,7 @@
 
 // eslint-disable-line
 
-/* 128 */
+/* 127 */
 
 /**
  * Removes '0x' from a given `String` is present
@@ -3274,7 +3272,7 @@
  * @return {String|Optional} a string by pass if necessary
  */
 
-/* 129 */
+/* 128 */
 
 /**
  * Returns a `Boolean` on whether or not the a `String` starts with '0x'
@@ -3283,7 +3281,7 @@
  * @throws if the str input is not a string
  */
 
-/* 130 */
+/* 129 */
 
 /**
  * A specialized version of `_.map` for arrays without support for iteratee
@@ -3295,7 +3293,7 @@
  * @returns {Array} Returns the new mapped array.
  */
 
-/* 131 */
+/* 130 */
 
 /**
  * The base implementation of `_.isEqual` which supports partial comparisons
@@ -3312,7 +3310,7 @@
  * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
  */
 
-/* 132 */
+/* 131 */
 
 /** Used to compose bitmasks for value comparisons. */
 
@@ -3336,7 +3334,7 @@
 
 // Recursively compare arrays (susceptible to call stack limits).
 
-/* 133 */
+/* 132 */
 
 /**
  * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
@@ -3347,7 +3345,7 @@
  *  equality comparisons, else `false`.
  */
 
-/* 134 */
+/* 133 */
 
 /**
  * A specialized version of `matchesProperty` for source values suitable
@@ -3359,7 +3357,7 @@
  * @returns {Function} Returns the new spec function.
  */
 
-/* 135 */
+/* 134 */
 
 /**
  * The base implementation of `_.get` without support for default values.
@@ -3370,7 +3368,7 @@
  * @returns {*} Returns the resolved value.
  */
 
-/* 136 */
+/* 135 */
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -3381,11 +3379,11 @@
  * @returns {Array} Returns the cast property path array.
  */
 
+/* 136 */
+
 /* 137 */
 
 /* 138 */
-
-/* 139 */
 
 // consume data
 
@@ -3393,7 +3391,7 @@
 
 // reset state
 
-/* 140 */
+/* 139 */
 
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
@@ -3405,9 +3403,11 @@
 
 // new Array(64)
 
-/* 141 */
+/* 140 */
 
 // t2 = sigma0 + maj
+
+/* 141 */
 
 /* 142 */
 
@@ -3415,15 +3415,15 @@
 
 /* 144 */
 
-/* 145 */
-
 // default in iojs
 
 /* eslint no-self-compare: 0 */
 
-/* 146 */
+/* 145 */
 
 /* istanbul ignore next */
+
+/* 146 */
 
 /* 147 */
 
@@ -3439,11 +3439,9 @@
 
 /* 153 */
 
-/* 154 */
-
 // this is what openssl does
 
-/* 155 */
+/* 154 */
 
 // Generage random bytes until a number less than n is found.
 
@@ -3453,7 +3451,7 @@
 
 // Find d and s, (n - 1) = (2 ^ s) * d;
 
-/* 156 */
+/* 155 */
 
 // Emulate crypto API using randy
 
@@ -3465,31 +3463,31 @@
 
 // Node.js or Web worker with no crypto support
 
+/* 156 */
+
 /* 157 */
 
 /* 158 */
 
 /* 159 */
 
-/* 160 */
-
 // 32 x 32bit words
 
 // i - 2
 
-/* 161 */
+/* 160 */
 
 // Return skipped data
 
 // Share reporter state
 
-/* 162 */
+/* 161 */
 
 // Helper
 
 // Convert key to integer if it is stringified
 
-/* 163 */
+/* 162 */
 
 // Construct base tree
 
@@ -3513,13 +3511,15 @@
 
 // Bigint, return as it is (assume big endian)
 
-/* 164 */
+/* 163 */
 
 // Count octets required to store length
 
 // Count number of octets
 
 // Bignum, assume big endian
+
+/* 164 */
 
 /* 165 */
 
@@ -3528,8 +3528,6 @@
 /* 167 */
 
 /* 168 */
-
-/* 169 */
 
 // Unique ID creation requires a high quality random # generator.  In the
 
@@ -3553,7 +3551,7 @@
 
 // quality.
 
-/* 170 */
+/* 169 */
 
 /**
  * Convert array of 16 byte values to UUID string format of the form:
@@ -3562,11 +3560,11 @@
 
 // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
 
+/* 170 */
+
 /* 171 */
 
 /* 172 */
-
-/* 173 */
 
 /**
  *  BigNumber
@@ -3576,7 +3574,7 @@
  *
  */
 
-/* 174 */
+/* 173 */
 
 // There are some issues with instanceof with npm link, so we use this
 
@@ -3592,7 +3590,7 @@
 
 // See: https://github.com/isaacs/inherits/blob/master/inherits_browser.js
 
-/* 175 */
+/* 174 */
 
 /**
  * [js-sha3]{@link https://github.com/emn178/js-sha3}
@@ -3604,6 +3602,8 @@
  */
 
 /*jslint bitwise: true */
+
+/* 175 */
 
 /* 176 */
 
@@ -8350,18 +8350,6 @@ and limitations under the License.
 // CONCATENATED MODULE: ./src/contractProvider.ts
 
 // @todo waiting for NAGY
-
-/**
-let socketsWeb3 = new Web3(new Web3.providers.WebsocketProvider('wss://ropsten.infura.io/v3/4bc7b00850ef4dceb8a527b094e65953'));
- */
-
-// set the provider you want from Web3.providers
-
-/*
-const privateKey = '6cbed15c793ce57650b9877cf6fa156fbef513c4e6134f022a85b1ffdd59b2a1';
-const account = web3.eth.accounts.privateKeyToAccount('0x' + privateKey);
-web3.eth.accounts.wallet.add(account);
-*/
 
 /*yield*/
 
