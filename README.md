@@ -17,10 +17,11 @@ You will find the build version here: `dist/ethnewyork-moneybutton.js`.
     <body> 
         <div id="your-custom-moneybutton"></div>
 
-        <script type="text/javascript" src="./ath-component.js">
+        <script type="text/javascript" src="ethnewyork-moneybutton.js" />
+        <script type="text/javascript">
             window.ethNewYorkMoneyButton.bootstrap({
                 domID: "your-custom-moneybutton",
-                apiUrl: "https://alphateamhackers.com"
+                contentId: location.href
             })
         </script>
     </body>
