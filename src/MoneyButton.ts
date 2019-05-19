@@ -23,7 +23,7 @@ export default class ExampleComponent {
         const buttonLabel = document.createElement("span") as HTMLSpanElement;
 
         buttonLabel.id = "button";
-        buttonLabel.innerText = "1$ vote";
+        buttonLabel.innerText = "Donate $8 to Chloe";
 
         button.appendChild(buttonLabel);
         viewWrapper.appendChild(button);

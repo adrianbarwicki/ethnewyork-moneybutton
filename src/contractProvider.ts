@@ -33,13 +33,14 @@ web3.eth.getAccounts().then(e => {
     // gasPrice: web3.utils.toWei("20", "gwei")
   };
  }) 
- */;
-
- web3.eth.getAccounts()
- .then(console.log);
+ */
 
 const contractInstance = new web3.eth.Contract(abi, contractAddress);
 
-export const getDefaultAddress = () => window.web3.currentProvider.selectedAddress;
+export const getDefaultAddress = async () => {
+  const accounts = await web3.eth.getAccounts();
+
+  return accounts[0];
+};
 
 export const get = () => contractInstance;

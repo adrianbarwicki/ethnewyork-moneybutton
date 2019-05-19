@@ -27,7 +27,7 @@ module.exports = {
                         transpileOnly: true
                     }
                 }],
-            }, 
+            }
         ],
     },
     externals: {

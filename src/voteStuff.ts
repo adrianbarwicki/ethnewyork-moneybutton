@@ -13,12 +13,13 @@ export const voteStuff = async (contentId: string) => {
       /**add here some content ID (maybe?) */
       contentId
     )
-    .call({
-      from: contractInstance.getDefaultAddress()
+    .send({
+      value: 100,
+      from: await contractInstance.getDefaultAddress()
     });
 
   // @todo what do we return? Consult Nagy
   console.log(res);
-  
+
   return res.toString();
 };
